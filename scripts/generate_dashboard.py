@@ -25,7 +25,7 @@ TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
 # ── what the card says ──────────────────────────────────────────────────────
 CONTACT = ("tg", "@db_mori")
 ABOUT = [
-    ("into", "privacy · cybersecurity · devops · automation"),
+    ("into", "privacy · cybersec · devops · automation"),
     ("os", "Windows 11 · CachyOS · debloated Android"),
 ]
 TOOLKIT = ["Python", "Rust", "PowerShell", "Bash", "JavaScript", "TypeScript", "Svelte",
