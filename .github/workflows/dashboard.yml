@@ -1,0 +1,37 @@
+name: Spin dashboard
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/**"
+      - "assets/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate dashboard.svg
+        run: python scripts/generate_dashboard.py
+        env:
+          # optional PAT (read:user) adds private contributions; falls back to the built-in token
+          GH_TOKEN: ${{ secrets.DASHBOARD_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/dashboard.svg
+          git commit -m "Spin dashboard $(date -u '+%Y-%m-%d %H:%M')" || exit 0
+          git push
