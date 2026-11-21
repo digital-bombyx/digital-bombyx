@@ -73,7 +73,7 @@
 <text x="204.0" y="851" font-size="13" fill="#F3E3C3" font-weight="bold" text-anchor="end" >261</text>
 <g transform="translate(238.0 740.0) scale(1.0)"><circle cx="4" cy="3.5" r="1.8" stroke="#D9A25B" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="12.5" r="1.8" stroke="#D9A25B" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12.5" r="1.8" stroke="#D9A25B" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path stroke="#D9A25B" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M4 5.3v5.4M12 10.7V6a2 2 0 0 0-2-2H7.5M9 2.5 7.5 4 9 5.5"/></g>
 <text x="262.0" y="752" font-size="12" fill="#A99E82" font-weight="normal" text-anchor="start" >pull requests</text>
-<text x="396.0" y="752" font-size="13" fill="#F3E3C3" font-weight="bold" text-anchor="end" >11</text>
+<text x="396.0" y="752" font-size="13" fill="#F3E3C3" font-weight="bold" text-anchor="end" >13</text>
 <g transform="translate(238.0 773.0) scale(1.0)"><circle cx="8" cy="8" r="6.2" stroke="#D9A25B" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.6" fill="#D9A25B"/></g>
 <text x="262.0" y="785" font-size="12" fill="#A99E82" font-weight="normal" text-anchor="start" >issues</text>
 <text x="396.0" y="785" font-size="13" fill="#F3E3C3" font-weight="bold" text-anchor="end" >1</text>
@@ -117,7 +117,7 @@
 <text x="462.0" y="855" font-size="12" fill="#F3E3C3" font-weight="normal" text-anchor="start" >other</text>
 <text x="612.0" y="855" font-size="12" fill="#A99E82" font-weight="normal" text-anchor="end" >4.1%</text>
 </g>
-<g class="f" style="animation-delay:0.57s"><text x="28" y="922" font-size="13" fill="#D9A25B" font-weight="bold" text-anchor="start" >[ SILK SPUN · 292 CONTRIBUTIONS ]</text><line x1="284.2" y1="918" x2="812" y2="918" stroke="#363D27" stroke-dasharray="2 5"/></g>
+<g class="f" style="animation-delay:0.57s"><text x="28" y="922" font-size="13" fill="#D9A25B" font-weight="bold" text-anchor="start" >[ SILK SPUN · 294 CONTRIBUTIONS ]</text><line x1="284.2" y1="918" x2="812" y2="918" stroke="#363D27" stroke-dasharray="2 5"/></g>
 <rect x="59.6" y="952.0" width="10.5" height="10.5" rx="2.5" fill="#262B1C" class="f" style="animation-delay:4.20s"><title>2025-11-16: 0</title></rect>
 <rect x="59.6" y="965.6" width="10.5" height="10.5" rx="2.5" fill="#262B1C" class="f" style="animation-delay:4.20s"><title>2025-11-17: 0</title></rect>
 <rect x="59.6" y="979.2" width="10.5" height="10.5" rx="2.5" fill="#262B1C" class="f" style="animation-delay:4.20s"><title>2025-11-18: 0</title></rect>
@@ -500,7 +500,7 @@
 <rect x="766.8" y="992.8" width="10.5" height="10.5" rx="2.5" fill="#262B1C" class="f" style="animation-delay:5.50s"><title>2026-11-18: 0</title></rect>
 <rect x="766.8" y="1006.4" width="10.5" height="10.5" rx="2.5" fill="#262B1C" class="f" style="animation-delay:5.50s"><title>2026-11-19: 0</title></rect>
 <rect x="766.8" y="1020.0" width="10.5" height="10.5" rx="2.5" fill="#3F5228" class="f" style="animation-delay:5.50s"><title>2026-11-20: 6</title></rect>
-<rect x="766.8" y="1033.6" width="10.5" height="10.5" rx="2.5" fill="#3F5228" class="f" style="animation-delay:5.50s"><title>2026-11-21: 4</title></rect>
+<rect x="766.8" y="1033.6" width="10.5" height="10.5" rx="2.5" fill="#3F5228" class="f" style="animation-delay:5.50s"><title>2026-11-21: 6</title></rect>
 <text x="700" y="1078.2" font-size="10" fill="#A99E82" font-weight="normal" text-anchor="end" >less</text>
 <rect x="708" y="1069.2" width="10.5" height="10.5" rx="2.5" fill="#262B1C"/>
 <rect x="722" y="1069.2" width="10.5" height="10.5" rx="2.5" fill="#3F5228"/>
@@ -511,7 +511,7 @@
 <g transform="translate(28.0 1065.2) scale(1.25)"><path d="M7.4 7.2C5 3.2 1.4 2.6.8 4.6c-.6 2 1.8 4 6.2 3.8z" fill="#F3E3C3"/><path d="M8.6 7.2c2.4-4 6-4.6 6.6-2.6.6 2-1.8 4-6.2 3.8z" fill="#F3E3C3"/><path d="M7.2 8.6c-3.4.4-4.8 3-3.4 4.2 1.2 1 3-.6 3.6-3.4z" fill="#D9A25B"/><path d="M8.8 8.6c3.4.4 4.8 3 3.4 4.2-1.2 1-3-.6-3.6-3.4z" fill="#D9A25B"/><rect x="7.1" y="5.6" width="1.8" height="7" rx=".9" fill="#8B5A2B"/><path d="M7.6 5.8C7 3.6 5.6 2.2 4.4 1.8M8.4 5.8C9 3.6 10.4 2.2 11.6 1.8" stroke="#8B5A2B" stroke-width="1" fill="none" stroke-linecap="round"/></g>
 <text x="56" y="1078.2" font-size="11" fill="#9DB07F" font-weight="normal" text-anchor="start" >quiet code, fluffy results</text>
 <line x1="28" y1="1103.2" x2="812" y2="1103.2" stroke="#363D27"/>
-<text x="28" y="1125.2" font-size="11" fill="#A99E82" font-weight="normal" text-anchor="start" >last spun 2026-11-21 10:46 UTC</text>
+<text x="28" y="1125.2" font-size="11" fill="#A99E82" font-weight="normal" text-anchor="start" >last spun 2026-11-21 19:15 UTC</text>
 <text x="812" y="1125.2" font-size="11" fill="#A99E82" font-weight="normal" text-anchor="end" >auto-updated by GitHub Actions</text>
 <rect x="1" y="1" width="838" height="1139.2" rx="17" fill="none" stroke="#9DB07F" stroke-opacity=".55" stroke-width="1.5"/>
 </svg>
