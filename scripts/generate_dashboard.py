@@ -39,8 +39,8 @@ PROJECTS = [
      "desc": "Performance-focused YouTube userscript: less clutter, less CPU, full control."},
     {"name": "SSHagement", "lang": "Svelte",
      "desc": "Offline-first SSH client for Windows. No cloud, no accounts, no telemetry."},
-    {"name": "outzoom", "lang": "TypeScript",
-     "desc": "Shift + wheel to zoom images and videos. MV3 rewrite for Firefox & Chrome."},
+    {"name": "Zapret2-RustGUI", "lang": "Rust",
+     "desc": "Cozy Windows GUI for zapret2: one-click DPI bypass, strategy tests, tray."},
 ]
 LANG_EXCLUDE = {"HTML", "CSS", "Batchfile", "Inno Setup", "NSIS"}
 
