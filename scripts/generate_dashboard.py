@@ -28,9 +28,6 @@ ABOUT = [
     ("into", "privacy · cybersec · devops · automation"),
     ("os", "Windows 11 · CachyOS · debloated Android"),
 ]
-TOOLKIT = ["Python", "Rust", "PowerShell", "Bash", "JavaScript", "TypeScript", "Svelte",
-           "Tauri", "Linux", "Docker", "n8n", "Cloudflare", "SQLite", "Postman", "Git",
-           "ADB", "AI / LLM"]
 # "source" is where stars come from (owner/repo); "role" adds a tag on the card
 PROJECTS = [
     {"name": "Argus", "source": "Ray-lea/Argus", "role": "contributor", "lang": "Rust",
@@ -249,21 +246,6 @@ def build(data):
                  f'{t(x0 + 64, yy, v, 13, CREAM)}</g>')
     y = 312
 
-    # toolkit
-    o.append(heading(y, "TOOLKIT"))
-    y += 18
-    x = PAD
-    for i, name in enumerate(TOOLKIT):
-        w = len(name) * 7.8 + 26
-        if x + w > W - PAD:
-            x, y = PAD, y + 36
-        c = [AMBER, SAGE, BUD, "#E8C9A0"][i % 4]
-        o.append(f'<g {fade(2.4 + i * 0.05)}><rect x="{x}" y="{y}" width="{w:.1f}" height="26" rx="13" '
-                 f'fill="{c}" fill-opacity=".14" stroke="{c}" stroke-opacity=".6"/>'
-                 f'{t(x + w / 2, y + 17.5, name, 13, c, "bold", "middle")}</g>')
-        x += w + 10
-    y += 26 + 44
-
     # projects
     o.append(heading(y, "SPUN SOLO & TOGETHER"))
     y += 18
@@ -294,7 +276,7 @@ def build(data):
             g.append(t(px + 16, py + 52 + j * 17, ln, 12, DIM))
         g.append(f'<circle cx="{px + cw - 14 - len(lang) * 7 - 10:.1f}" cy="{py + ch - 14}" r="4" fill="{SAGE}"/>')
         g.append(t(px + cw - 14, py + ch - 10, lang, 11, SAGE, anchor="end"))
-        o.append(f'<g {fade(2.9 + i * 0.12)}>{"".join(g)}</g>')
+        o.append(f'<g {fade(2.3 + i * 0.12)}>{"".join(g)}</g>')
     y += -(-len(PROJECTS) // 2) * (ch + 14) + 30
 
     # metrics
@@ -306,7 +288,7 @@ def build(data):
              ("pr", "pull requests", data["prs"]), ("issue", "issues", data["issues"]),
              ("flame", "current streak", f"{cur}d"), ("trophy", "best streak", f"{longest}d")]
     ph = 168
-    o.append(f'<g {fade(3.8)}><rect x="{PAD}" y="{y}" width="{cw:.1f}" height="{ph}" rx="10" '
+    o.append(f'<g {fade(3.2)}><rect x="{PAD}" y="{y}" width="{cw:.1f}" height="{ph}" rx="10" '
              f'fill="{PANEL}" stroke="{LINE}"/>')
     for i, (ic, label, val) in enumerate(stats):
         sx = PAD + 18 + (i // 4) * (cw / 2)
@@ -324,7 +306,7 @@ def build(data):
     rest = total - sum(v for _, v in top)
     if rest > 0:
         top.append(("other", rest))
-    o.append(f'<g {fade(4.0)}><rect x="{lx:.1f}" y="{y}" width="{cw:.1f}" height="{ph}" rx="10" '
+    o.append(f'<g {fade(3.4)}><rect x="{lx:.1f}" y="{y}" width="{cw:.1f}" height="{ph}" rx="10" '
              f'fill="{PANEL}" stroke="{LINE}"/>')
     o.append(t(lx + 18, y + 30, "languages", 12, DIM))
     bx, bw = lx + 18, cw - 36
@@ -367,7 +349,7 @@ def build(data):
             last_month = d.month
         lvl = 0 if c == 0 else min(4, 1 + int(3 * c / peak + 0.35))
         o.append(f'<rect x="{gx + wk * step:.1f}" y="{y + wd * step:.1f}" width="10.5" height="10.5" rx="2.5" '
-                 f'fill="{HEAT[lvl]}" class="f" style="animation-delay:{4.2 + wk * 0.025:.2f}s">'
+                 f'fill="{HEAT[lvl]}" class="f" style="animation-delay:{3.6 + wk * 0.025:.2f}s">'
                  f'<title>{date}: {c}</title></rect>')
     y += 7 * step + 22
     lg = W - PAD - 5 * 14 - 34
