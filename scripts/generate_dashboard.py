@@ -36,8 +36,8 @@ PROJECTS = [
      "desc": "Performance-focused YouTube userscript: less clutter, less CPU, full control."},
     {"name": "SSHagement", "lang": "Svelte",
      "desc": "Offline-first SSH client for Windows. No cloud, no accounts, no telemetry."},
-    {"name": "Zapret2-RustGUI", "lang": "Rust",
-     "desc": "Cozy Windows GUI for zapret2: one-click DPI bypass, strategy tests, tray."},
+    {"name": "digital-bypass", "lang": "Rust",
+     "desc": "Censorship-bypass multitool for Windows: zapret2, proxy, Xray, Tor, MCP."},
 ]
 LANG_EXCLUDE = {"HTML", "CSS", "Batchfile", "Inno Setup", "NSIS"}
 
